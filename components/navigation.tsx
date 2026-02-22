@@ -18,15 +18,25 @@ export function Navigation() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
+
             <Link href="#services" className="text-sm font-medium hover:text-accent transition-colors">
               Services
             </Link>
+
             <Link href="#courses" className="text-sm font-medium hover:text-accent transition-colors">
               Courses
             </Link>
+
+             <Link href="/portfolio" className="text-sm font-medium hover:text-accent transition-colors">
+              Portfolio
+            </Link>
+
+
+
             <Link href="#contact" className="text-sm font-medium hover:text-accent transition-colors">
               Contact
             </Link>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -44,6 +54,12 @@ export function Navigation() {
             <Link href="#courses" className="block px-2 py-2 text-sm hover:text-accent transition-colors">
               Courses
             </Link>
+
+              <Link href="/portfolio" className="block px-2 py-2 text-sm hover:text-accent transition-colors">
+                Portfolio
+              </Link>
+
+
             <Link href="#contact" className="block px-2 py-2 text-sm hover:text-accent transition-colors">
               Contact
             </Link>

@@ -1,0 +1,107 @@
+/* ===== SECTION STYLING ===== */
+
+.section {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* ===== CARD STYLING ===== */
+
+.card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== IMAGE EFFECT ===== */
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== OVERLAY EFFECT ===== */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.previewBtn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.previewBtn:hover {
+  background: #00f3ff;
+  color: black;
+}
+
+/* ===== CATEGORY TEXT ===== */
+
+.category {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* ===== SOCIAL CARD ===== */
+
+.socialCard {
+  background: rgba(15, 23, 42, 0.8);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.socialCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 243, 255, 0.3);
+}
+
+.socialBox {
+  height: 160px;
+  background: linear-gradient(135deg, #0ea5e9, #00f3ff);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: black;
+}
